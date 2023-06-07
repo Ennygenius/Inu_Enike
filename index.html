@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inu Enike</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/14bfa6f5f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+    <div class="top">
+    <div class="nav__sidebar">
+        <div class="nav__sidebar__logo">
+            <i class="fa-brands fa-stumbleupon fa-xl" style="color: #450dd3;"></i><h2> Ennykhe</h2>
+        </div>
+        <ul>
+            <li> 
+                <a class="icon-img" href="#home">
+                    <i class="fa-solid fa-house"></i>
+                </a> 
+                <a href="#home"> HOME</a>
+            </li>
+            <li>
+                 <a class="icon-img" href="#about">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                 <a href="#about"> ABOUT</a>
+            </li>
+            <li>
+                <a class="icon-img" href="#project">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="#"> PROJECTS</a>
+            </li>
+            <li>
+                <a class="icon-img" href="#contact">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="#"> CONTACT</a>
+            </li>
+        </ul>
+    </div>
+ 
+</div>
+       <div class="hero__section" id="home">
+        <div class="hero__section__text">
+            <h1>WELCOME TO MY WORLD</h1>
+            <p>My name is Inu Enike and I'm a 
+                <span id="element" style="color: #0d63e4;"></span>
+                <!-- Backend Developer, Graphics Designer, UI &UX Designer.....</p> -->
+        </div>
+        <div class="btn">
+            <a href="My Portfolio.pdf" download ><button class="btnn cta1">Download CV</button></a>
+            <button class="btnn cta2">Contact Me</button>
+        </div>
+       
+        <div class="hero__section__image" >
+            <img src="./hero-bg.png" data-aos="fade-right" alt="">
+        </div>
+         <div class="hero__section__icons" data-aos="flip-right">
+            <i class="fa-brands fa-facebook fa-xl" style="color: #0d63f8;"></i>
+            <i class="fa-brands fa-twitter fa-xl " style="color: #e4460d;"></i>
+            <i class="fa-brands fa-instagram fa-xl" style="color: #0d63e4;"></i>
+        </div>
+    </div>
+
+    <div class="about__section" data-aos="fade-up" id="about">
+        <h3>About Me</h3>
+        <div class="about__section__details">
+            <div class="about__section__details__img" data-aos="fade-down">
+                <img src="about__bg.jpg" alt="">
+            </div>
+            <div class="about__section__details__text">
+                <p>I'm a web developer and a backend API developer with 2 1/2 of experience, i play a key role in an organization. I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                <ul class="stacks" data-aos="fade-left">
+                   <h3> My Stacks includes</h3>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>TailwindCss</li>
+                    <li>NodeJs</li>
+                    <li>Express Js</li>
+                    <li>MongoDb</li>
+                    <li>Django</li>
+                </ul>
+                <div class="btn" data-aos="fade-up">
+                    <button class="btnn cta2">Contact Me</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- <div class="my__projects" id="project">
+        <h3 data-aos="fade-up-left">Projects</h3>
+        <div class="my__projects__details">
+            <div class="my__projects__details__text">
+                <h2>Nedex</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat accusamus, fugiat eum praesentium ea quibusdam quae tenetur doloribus autem accusantium quidem quia aut ipsa sint facilis in natus ab.</p>
+                <a href="#" class="links">view Github</a>
+                <a href="#">view Live Demo</a>
+            </div>
+            <img src="./bg.jpg" alt="">
+        </div>
+    </div> -->
+
+        <div class="contact">
+            <h3 data-aos="fade-up-right">Contact Me</h3>
+            <form method="post" class="contact__details" data-aos="fade-down">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <a href="#"><button type="submit" class="btnn cta1">Submit</button></a>
+            </form>
+        </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!------------------ JAVASCRIPT -------------->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full Stack Developer', ' Graphics Designer','&amp;','UI and UX Designer.....'],
+          typeSpeed: 50,
+          loop: true
+        });
+      </script>
+
+       <script>
+         AOS.init({
+				easing: 'ease-out-back',
+				duration: 3000
+			});
+            
+       </script>
+</body>
+</html>
