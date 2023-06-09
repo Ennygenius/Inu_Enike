@@ -11,40 +11,44 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
-    <div class="top">
-    <div class="nav__sidebar">
-        <div class="nav__sidebar__logo">
-            <i class="fa-brands fa-stumbleupon fa-xl" style="color: #450dd3;"></i><h2> Ennykhe</h2>
+
+    <!--------------------------- nav__sidebar  -------------------------------->
+        <div class="top">
+        <div class="nav__sidebar">
+            <div class="nav__sidebar__logo">
+                <i class="fa-brands fa-stumbleupon fa-xl" style="color: #450dd3;"></i><h2> Ennykhe</h2>
+            </div>
+            <ul>
+                <li> 
+                    <a class="icon-img" href="#home">
+                        <i class="fa-solid fa-house"></i>
+                    </a> 
+                    <a href="#home"> HOME</a>
+                </li>
+                <li>
+                    <a class="icon-img" href="#about">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#about"> ABOUT</a>
+                </li>
+                <li>
+                    <a class="icon-img" href="#project">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="#"> PROJECTS</a>
+                </li>
+                <li>
+                    <a class="icon-img" href="#contact">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="#"> CONTACT</a>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li> 
-                <a class="icon-img" href="#home">
-                    <i class="fa-solid fa-house"></i>
-                </a> 
-                <a href="#home"> HOME</a>
-            </li>
-            <li>
-                 <a class="icon-img" href="#about">
-                    <i class="fa-solid fa-user"></i>
-                </a>
-                 <a href="#about"> ABOUT</a>
-            </li>
-            <li>
-                <a class="icon-img" href="#project">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="#"> PROJECTS</a>
-            </li>
-            <li>
-                <a class="icon-img" href="#contact">
-                    <i class="fa-solid fa-phone"></i>
-                </a>
-                <a href="#"> CONTACT</a>
-            </li>
-        </ul>
     </div>
- 
-</div>
+
+
+    <!------------------------------- hero --------------------------->
        <div class="hero__section" id="home">
         <div class="hero__section__text">
             <h1>WELCOME TO MY WORLD</h1>
@@ -67,13 +71,16 @@
         </div>
     </div>
 
+
+
+    <!---------------------- about__section ------------------------------->
     <div class="about__section" data-aos="fade-up" id="about">
         <h3>About Me</h3>
         <div class="about__section__details">
             <div class="about__section__details__img" data-aos="fade-down">
                 <img src="about__bg.jpg" alt="">
             </div>
-            <div class="about__section__details__text">
+            <div class="about__section__details__text" id="about">
                 <p>I'm a web developer and a backend API developer with 2 1/2 of experience, i play a key role in an organization. I value simple content structure, clean design patterns, and thoughtful interactions.</p>
                 <ul class="stacks" data-aos="fade-left">
                    <h3> My Stacks includes</h3>
@@ -96,20 +103,8 @@
     </div>
 
 
-    <!-- <div class="my__projects" id="project">
-        <h3 data-aos="fade-up-left">Projects</h3>
-        <div class="my__projects__details">
-            <div class="my__projects__details__text">
-                <h2>Nedex</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat accusamus, fugiat eum praesentium ea quibusdam quae tenetur doloribus autem accusantium quidem quia aut ipsa sint facilis in natus ab.</p>
-                <a href="#" class="links">view Github</a>
-                <a href="#">view Live Demo</a>
-            </div>
-            <img src="./bg.jpg" alt="">
-        </div>
-    </div> -->
-
-        <div class="contact">
+    <!------------------------------ contact__section ------------------------->
+        <div class="contact" id="contact">
             <h3 data-aos="fade-up-right">Contact Me</h3>
             <form method="post" class="contact__details" data-aos="fade-down">
                 <input type="text" placeholder="Enter Your Name" required>
